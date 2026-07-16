@@ -2,3 +2,10 @@
 
 .skip-link{position:absolute;left:16px;top:8px;transform:translateY(-150%);background:var(--ink);color:var(--paper);padding:10px 14px;border-radius:4px;z-index:10;font-weight:700}.skip-link:focus{transform:translateY(0)}:focus-visible{outline:3px solid var(--orange);outline-offset:4px}.button:focus-visible,.nav-contact:focus-visible{outline-color:var(--lime);outline-offset:5px}.menu-toggle{cursor:pointer}.menu-toggle:focus-visible{outline-offset:2px}@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
 .contact-links{flex-wrap:wrap;gap:22px 42px}.project-link{display:flex;align-items:center;gap:18px;width:max-content;margin-top:25px;border-bottom:1px solid var(--ink);padding-bottom:12px;font-size:12px;font-weight:800}@media(max-width:760px){.project-link{font-size:11px}.contact-links{gap:20px}}
+
+/* Original signal-map artwork: decorative, responsive, and motion-free. */
+.hero-aside{max-width:315px}
+.signal-art{position:relative;width:min(100%,315px);margin:0 0 18px -20px}
+.signal-art img{display:block;width:100%;height:auto;opacity:.86}
+.signal-art-label{position:absolute;right:25px;bottom:32px;color:var(--ink);font:10px 'DM Mono';letter-spacing:.08em;text-transform:uppercase;transform:rotate(-90deg);transform-origin:right bottom}
+@media(max-width:760px){.hero-aside{max-width:100%}.signal-art{width:min(100%,360px);margin-left:-18px}}

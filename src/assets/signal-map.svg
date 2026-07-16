@@ -1,0 +1,24 @@
+<svg width="640" height="520" viewBox="0 0 640 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract signal map</title>
+  <desc id="desc">A decorative map of connected signal paths and nodes.</desc>
+  <defs>
+    <linearGradient id="wash" x1="36" y1="30" x2="578" y2="463" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8EF54" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#FF704D" stop-opacity=".75"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="32"/></filter>
+  </defs>
+  <path d="M162 74C239 35 303 63 333 129C371 212 460 177 523 221C582 262 548 358 472 393C402 425 366 490 271 464C188 441 187 369 115 337C46 306 35 201 90 139C110 117 132 91 162 74Z" fill="url(#wash)" opacity=".3" filter="url(#blur)"/>
+  <g stroke="#17211D" stroke-opacity=".56" stroke-width="1.5">
+    <path d="M34 402C115 365 131 285 191 263C250 241 274 319 337 309C420 296 420 196 504 168C548 153 582 169 611 190"/>
+    <path d="M68 108C126 145 151 210 205 210C264 210 295 122 358 125C430 128 438 235 500 256C546 272 580 252 616 231"/>
+    <path d="M104 476C167 430 160 354 219 332C276 311 315 375 376 366C451 355 456 275 535 286C566 290 588 310 608 333"/>
+    <path d="M254 38C238 104 267 144 307 170C347 196 380 194 400 235C430 294 388 342 400 392C410 436 443 462 472 482"/>
+  </g>
+  <g fill="#17211D">
+    <circle cx="34" cy="402" r="5"/><circle cx="191" cy="263" r="7"/><circle cx="337" cy="309" r="5"/><circle cx="504" cy="168" r="7"/><circle cx="611" cy="190" r="4"/>
+    <circle cx="68" cy="108" r="4"/><circle cx="205" cy="210" r="6"/><circle cx="358" cy="125" r="5"/><circle cx="500" cy="256" r="7"/><circle cx="616" cy="231" r="4"/>
+  </g>
+  <g fill="#FF704D"><circle cx="104" cy="476" r="6"/><circle cx="376" cy="366" r="5"/></g>
+  <g fill="#B8EF54"><circle cx="254" cy="38" r="6"/><circle cx="472" cy="482" r="5"/></g>
+</svg>

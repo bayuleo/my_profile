@@ -11,6 +11,7 @@ const translations = {
   'Selected work': 'Karya pilihan', 'Projects with': 'Proyek dengan', 'practical impact.': 'dampak nyata.',
   'Let’s make something': 'Mari membuat sesuatu', 'work beautifully.': 'bekerja dengan indah.', 'Back to top ': 'Kembali ke atas ',
   'Built with care / Indonesia': 'Dibuat dengan sepenuh perhatian / Indonesia',
+  'I’m Rahmad Bayu Darmawan, a Mobile Engineer focused on Android, iOS, and Flutter applications, production troubleshooting, and reliable release workflows.': 'Saya Rahmad Bayu Darmawan, Mobile Engineer yang berfokus pada aplikasi Android, iOS, dan Flutter, penanganan masalah produksi, serta alur rilis yang andal.',
   'View on Google Play ': 'Lihat di Google Play ', 'App Store ': 'App Store ', 'Google Play ': 'Google Play ',
   'API & auth': 'API & autentikasi', 'Incident response': 'Respons insiden', 'Release workflows': 'Alur rilis', 'Core skills': 'Keahlian utama',
   'AI-enabled delivery:': 'Pengiriman berbantuan AI:',

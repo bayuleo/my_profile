@@ -15,13 +15,14 @@ Mobile and IT Support professional with experience spanning telecommunications n
 | Jan 2014–Apr 2015 | Customer Service Assistant | Jagoanhosting | Malang | Supported website, domain, and hosting customers; gathered issue details, performed initial troubleshooting, coordinated escalation, and followed issues through resolution. |
 | Apr 2015–Feb 2016 | Network Engineer | PT Xerindo Teknologi | Malang | Supported field installation and upgrades migrating mobile network devices from 3G to Huawei 4G; performed setup, connectivity checks, reporting, and escalation. |
 | Dec 2018–Sep 2023 | Mobile Engineer | Alterra Indonesia | Jakarta | Maintained mobile banking and enterprise applications including Alphapay, a POS app focused at the time on digital products for mobile-phone counters, and Solfin, a banking app from Alterra Indonesia’s collaboration with Bank Mayapada; handled bug triage, API/authentication/notification/device issues, release support, thermal-printer integration, and mentoring. |
-| Oct 2023–Jul 2026* | Mobile Engineer | Reku | Jakarta | Maintained the core Android/iOS crypto-exchange application; investigated defects and production incidents, analyzed logs, coordinated with QA/backend/product/release teams, and supported Codemagic, Fastlane, and Shorebird workflows. |
+| Oct 2023–Jul 2026* | Mobile Developer | Reku | Jakarta | Maintained the core Android/iOS crypto-exchange application; participated in AI implementation and workflow improvements associated with release cadence moving from about monthly to about weekly; investigated defects and production incidents, analyzed logs, coordinated with QA/backend/product/release teams, and supported Codemagic, Fastlane, and Shorebird workflows. |
 
 \* Confirm whether July 2026 is the end date or the CV update date.
 
 ## Selected achievements and projects
 
 - Reku: CV states that release cadence increased from monthly to weekly through workflow improvements and AI-assisted engineering tools.
+- Reku FDE positioning: participation in practical AI implementation and workflow improvement demonstrates Forward Deployed Engineer capabilities; no additional AI system or ownership claims are published.
 - Alterra Indonesia: Integrated Android applications with thermal printers for field billing workflows.
 - Alterra Indonesia: Mentored mobile engineers and received the Best Runner Employee award in 2020.
 - CCP Management (2023–2026, part-time, freelance): Mobile operational system for CCP, a local internet-provider brand in Magetan, East Java, covering attendance, payroll, and customer-data management.

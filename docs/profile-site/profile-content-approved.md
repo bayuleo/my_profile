@@ -22,7 +22,7 @@ Use the following chronology and role descriptions. Do not add seniority labels,
 | January 2014–April 2015 | Customer Service Assistant | Jagoanhosting | Malang | Supported website, domain, and hosting customers through issue intake, initial troubleshooting, escalation, and follow-through to resolution. |
 | April 2015–February 2016 | Network Engineer | PT Xerindo Teknologi | Malang | Supported field installation and upgrades migrating mobile network devices from 3G to Huawei 4G, including setup, connectivity checks, reporting, and escalation. |
 | December 2018–September 2023 | Mobile Engineer | Alterra Indonesia | Jakarta | Maintained mobile banking and enterprise applications including Alphapay, a POS app focused at the time on digital products for mobile-phone counters, and Solfin, a banking app from Alterra Indonesia’s collaboration with Bank Mayapada; handled defect triage, API/authentication/notification/device issues, release support, thermal-printer integration, and mentoring. |
-| October 2023–July 2026 | Mobile Engineer | Reku | Jakarta | Reku is an Indonesian digital-asset investment platform. Maintained Android/iOS application functionality; investigated defects and production incidents, analyzed logs, coordinated with QA/backend/product/release teams, and supported Codemagic, Fastlane, and Shorebird workflows. |
+| October 2023–July 2026 | Mobile Developer | Reku | Jakarta | Reku is an Indonesian digital-asset investment platform. Maintained Android/iOS application functionality; contributed to AI implementation and workflow improvements that helped move releases from about monthly to about weekly; investigated defects and production incidents, analyzed logs, coordinated with QA/backend/product/release teams, and supported Codemagic, Fastlane, and Shorebird workflows. |
 
 Company context used on the public experience page: Alterra Indonesia provides digital infrastructure and distribution services in Indonesia; Xerindo is a telecommunications engineering company supporting mobile-network infrastructure; Indosat is a telecommunications operator; Jagoanhosting provides website, domain, and hosting services; INFRACOM provides telecommunications and information-technology infrastructure solutions, including engineering, systems integration, network deployment, and VSAT services. Indosat and Jagoanhosting remain separate entries because their supplied periods, roles, locations, and responsibilities differ.
 
@@ -34,6 +34,7 @@ Company context used on the public experience page: Alterra Indonesia provides d
 - **Arrohmah Visitor (freelance):** Built a Flutter application for iOS and Android to manage santri check-in and check-out at Arrohmah school as an organizational operational system.
 - **Alterra Indonesia achievement:** Received the Best Runner Employee award in 2020.
 - **Reku delivery improvement:** The CV states that release cadence increased from monthly to weekly through workflow improvements and AI-assisted engineering tools. Publish this only as an owner-provided CV claim, without presenting it as an independently audited metric.
+- **Reku FDE positioning:** The Reku contribution demonstrates practical Forward Deployed Engineer capability through participation in AI implementation and workflow improvements that affected engineering and product delivery.
 
 ## Skills
 

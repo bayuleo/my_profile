@@ -28,8 +28,13 @@ const translations = {
   'Internal PDAM record-keeping application and one of Alterra Indonesia’s products. Used for internal operational workflows.': 'Aplikasi pencatatan internal PDAM dan salah satu produk Alterra Indonesia. Digunakan untuk alur kerja operasional internal.',
   'Freelance Flutter application for the operational system of Arrohmah school, managing santri check-in and check-out across iOS and Android.': 'Aplikasi Flutter freelance untuk sistem operasional sekolah Arrohmah, mengelola check-in dan check-out santri di iOS dan Android.',
   'If you’re hiring for a mobile engineering role, building a mobile product, or untangling a tricky production issue, I’d be glad to connect.': 'Jika Anda sedang merekrut untuk peran mobile engineering, membangun produk mobile, atau menangani masalah produksi yang rumit, saya dengan senang hati akan terhubung.',
-  'Stakeholder coordination': 'Koordinasi stakeholder', 'Network infrastructure': 'Infrastruktur jaringan', 'Software Engineering': 'Rekayasa Perangkat Lunak', 'Electricity usage': 'Penggunaan listrik', 'Internal app': 'Aplikasi internal', 'Management': 'Manajemen'
-  ,'/ 01 — About': '/ 01 — Tentang', '/ 02 — Experience': '/ 02 — Pengalaman', '/ 03 — Community leadership': '/ 03 — Kepemimpinan komunitas', '/ 04 — Education': '/ 04 — Pendidikan', '/ 05 — Selected work': '/ 05 — Karya pilihan', '/ 06 — Contact': '/ 06 — Kontak', 'Android · Management': 'Android · Manajemen', 'Android · Xamarin · Internal app': 'Android · Xamarin · Aplikasi internal'
+  'Stakeholder coordination': 'Koordinasi stakeholder', 'Network infrastructure': 'Infrastruktur jaringan', 'Software Engineering': 'Rekayasa Perangkat Lunak', 'Electricity usage': 'Penggunaan listrik', 'Internal app': 'Aplikasi internal', 'Management': 'Manajemen', 'DARK': 'GELAP',
+  'I’m Rahmad Bayu Darmawan, a Mobile Engineer focused on Android, iOS, and Flutter applications, production troubleshooting, and reliable release workflows.': 'Saya Rahmad Bayu Darmawan, Mobile Engineer yang berfokus pada aplikasi Android, iOS, dan Flutter, troubleshooting produksi, serta alur rilis yang andal.',
+  'INFRACOM provides telecommunications and information-technology infrastructure solutions, including engineering, systems integration, network deployment, and VSAT services. Monitored internet network services transmitted from earth stations to satellites.': 'INFRACOM menyediakan solusi infrastruktur telekomunikasi dan teknologi informasi, termasuk engineering, integrasi sistem, deployment jaringan, dan layanan VSAT. Memantau layanan jaringan internet yang ditransmisikan dari stasiun bumi ke satelit.',
+  'Community Treasurer & Technical Lead': 'Bendahara Komunitas & Technical Lead', 'Neighborhood organization': 'Organisasi lingkungan', 'Operations': 'Operasional', 'Web systems': 'Sistem web',
+  'Mobile Developer': 'Pengembang Mobile', 'Mobile Engineer': 'Mobile Engineer', 'Network Engineer': 'Insinyur Jaringan', 'Customer Service Assistant': 'Asisten Layanan Pelanggan', 'Technical Support': 'Dukungan Teknis', 'Network Operations Center': 'Pusat Operasi Jaringan',
+  'OCT': 'OKT', 'DEC': 'DES', 'APR': 'APR', 'FEB': 'FEB', 'JAN': 'JAN', 'MAY': 'MEI',
+  '/ 01 — About': '/ 01 — Tentang', '/ 02 — Experience': '/ 02 — Pengalaman', '/ 03 — Community leadership': '/ 03 — Kepemimpinan komunitas', '/ 04 — Education': '/ 04 — Pendidikan', '/ 05 — Selected work': '/ 05 — Karya pilihan', '/ 06 — Contact': '/ 06 — Kontak', 'Android · Management': 'Android · Manajemen', 'Android · Xamarin · Internal app': 'Android · Xamarin · Aplikasi internal'
 };
 const storage = {
   get(key) { try { return localStorage.getItem(key); } catch { return null; } },
@@ -52,6 +57,8 @@ function setLanguage(language) {
     node.nodeValue = language === 'id' ? translateText(value) : value;
   });
   sectionLabels.forEach((node, index) => { node.textContent = language === 'id' ? sectionLabelIndonesian[index] : sectionLabelEnglish[index]; });
+  const themeLabel = document.querySelector('.theme-label');
+  if (themeLabel) themeLabel.textContent = language === 'id' ? (document.documentElement.dataset.theme === 'dark' ? 'TERANG' : 'GELAP') : (document.documentElement.dataset.theme === 'dark' ? 'Light' : 'Dark');
   storage.set('profile-language', language);
   document.querySelector('.language-toggle').textContent = language === 'id' ? 'EN' : 'ID';
   document.querySelector('.language-toggle').setAttribute('aria-label', language === 'id' ? 'Switch to English' : 'Beralih ke Bahasa Indonesia');
@@ -75,7 +82,7 @@ function setTheme(theme) {
   const icon = themeToggle.querySelector('span');
   const label = themeToggle.querySelector('.theme-label');
   if (icon) icon.textContent = dark ? '☀' : '☾';
-  if (label) label.textContent = dark ? 'Light' : 'Dark';
+  if (label) label.textContent = document.documentElement.lang === 'id' ? (dark ? 'TERANG' : 'GELAP') : (dark ? 'Light' : 'Dark');
 }
 themeToggle?.addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
 setTheme(document.documentElement.dataset.theme || (window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));

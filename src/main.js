@@ -52,6 +52,11 @@ function setLanguage(language) {
     node.nodeValue = language === 'id' ? translateText(value) : value;
   });
   sectionLabels.forEach((node, index) => { node.textContent = language === 'id' ? sectionLabelIndonesian[index] : sectionLabelEnglish[index]; });
+  const themeLabel = document.querySelector('.theme-label');
+  const themeButton = document.querySelector('.theme-toggle');
+  const isDark = document.documentElement.dataset.theme === 'dark';
+  if (themeLabel) themeLabel.textContent = language === 'id' ? (isDark ? 'TERANG' : 'GELAP') : (isDark ? 'Light' : 'Dark');
+  if (themeButton) themeButton.setAttribute('aria-label', language === 'id' ? (isDark ? 'Beralih ke mode terang' : 'Beralih ke mode gelap') : (isDark ? 'Switch to light mode' : 'Switch to dark mode'));
   storage.set('profile-language', language);
   document.querySelector('.language-toggle').textContent = language === 'id' ? 'EN' : 'ID';
   document.querySelector('.language-toggle').setAttribute('aria-label', language === 'id' ? 'Switch to English' : 'Beralih ke Bahasa Indonesia');
@@ -71,11 +76,12 @@ function setTheme(theme) {
   storage.set('profile-theme', theme);
   const dark = theme === 'dark';
   if (!themeToggle) return;
-  themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+  const isIndonesian = document.documentElement.lang === 'id';
+  themeToggle.setAttribute('aria-label', isIndonesian ? (dark ? 'Beralih ke mode terang' : 'Beralih ke mode gelap') : (dark ? 'Switch to light mode' : 'Switch to dark mode'));
   const icon = themeToggle.querySelector('span');
   const label = themeToggle.querySelector('.theme-label');
   if (icon) icon.textContent = dark ? '☀' : '☾';
-  if (label) label.textContent = dark ? 'Light' : 'Dark';
+  if (label) label.textContent = document.documentElement.lang === 'id' ? (dark ? 'TERANG' : 'GELAP') : (dark ? 'Light' : 'Dark');
 }
 themeToggle?.addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
 setTheme(document.documentElement.dataset.theme || (window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));

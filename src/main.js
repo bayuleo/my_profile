@@ -46,9 +46,12 @@ function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
   storage.set('profile-theme', theme);
   const dark = theme === 'dark';
-  themeToggle?.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-  themeToggle?.querySelector('span').textContent = dark ? '☀' : '☾';
-  themeToggle?.querySelector('.theme-label').textContent = dark ? 'Light' : 'Dark';
+  if (!themeToggle) return;
+  themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+  const icon = themeToggle.querySelector('span');
+  const label = themeToggle.querySelector('.theme-label');
+  if (icon) icon.textContent = dark ? '☀' : '☾';
+  if (label) label.textContent = dark ? 'Light' : 'Dark';
 }
 themeToggle?.addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
 setTheme(document.documentElement.dataset.theme || (window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));

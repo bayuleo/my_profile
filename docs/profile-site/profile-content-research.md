@@ -14,7 +14,7 @@ Mobile and IT Support professional with experience spanning telecommunications n
 | Feb 2013–Dec 2014 | Technical Support | PT Indosat Tbk. | Surabaya and surrounding areas | Supported telecommunications issues through hardware, connectivity, and service checks; documented, troubleshot, and escalated unresolved cases. |
 | Jan 2014–Apr 2015 | Customer Service Assistant | Jagoanhosting | Malang | Supported website, domain, and hosting customers; gathered issue details, performed initial troubleshooting, coordinated escalation, and followed issues through resolution. |
 | Apr 2015–Feb 2016 | Network Engineer | PT Xerindo Teknologi | Malang | Supported field installation and upgrades migrating mobile network devices from 3G to Huawei 4G; performed setup, connectivity checks, reporting, and escalation. |
-| Dec 2018–Sep 2023 | Mobile Engineer | Alterra Indonesia | Jakarta | Developed and maintained mobile banking and enterprise applications; handled bug triage, API/authentication/notification/device issues, release support, thermal-printer integration, and mentoring. |
+| Dec 2018–Sep 2023 | Mobile Engineer | Alterra Indonesia | Jakarta | Maintained mobile banking and enterprise applications including Alphapay, a POS app focused at the time on digital products for mobile-phone counters, and Solfin, a banking app from Alterra Indonesia’s collaboration with Bank Mayapada; handled bug triage, API/authentication/notification/device issues, release support, thermal-printer integration, and mentoring. |
 | Oct 2023–Jul 2026* | Mobile Engineer | Reku | Jakarta | Maintained the core Android/iOS crypto-exchange application; investigated defects and production incidents, analyzed logs, coordinated with QA/backend/product/release teams, and supported Codemagic, Fastlane, and Shorebird workflows. |
 
 \* Confirm whether July 2026 is the end date or the CV update date.
@@ -24,8 +24,9 @@ Mobile and IT Support professional with experience spanning telecommunications n
 - Reku: CV states that release cadence increased from monthly to weekly through workflow improvements and AI-assisted engineering tools.
 - Alterra Indonesia: Integrated Android applications with thermal printers for field billing workflows.
 - Alterra Indonesia: Mentored mobile engineers and received the Best Runner Employee award in 2020.
-- CCP Management (2023–2026, part-time): Mobile operational system for CCP, a local internet-provider brand in Magetan, East Java, covering attendance, payroll, and customer-data management.
-- Loket Mobile (2020–2021): Internal PDAM record-keeping application and one of Alterra Indonesia’s products; no public Play Store listing.
+- CCP Management (2023–2026, part-time, freelance): Mobile operational system for CCP, a local internet-provider brand in Magetan, East Java, covering attendance, payroll, and customer-data management.
+- Loket Mobile (2020–2021): PDAM record-keeping application and one of Alterra Indonesia’s products.
+- Alphapay and Solfin: Alphapay is a POS app focused at the time on digital products for mobile-phone counters; Solfin is a banking app from Alterra Indonesia’s collaboration with Bank Mayapada.
 - Arrohmah Visitor (freelance): Flutter application for iOS and Android that manages santri check-in and check-out at Arrohmah school.
 
 ## Public company-context sources

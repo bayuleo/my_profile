@@ -39,11 +39,13 @@ const textNodes = [...document.body.childNodes].flatMap(function collect(node) {
   return [...node.childNodes].flatMap(collect);
 });
 const englishText = new Map(textNodes.map((node) => [node, node.nodeValue]));
+const translationEntries = Object.entries(translations).sort(([left], [right]) => right.length - left.length);
+const translateText = (value) => translationEntries.reduce((text, [source, target]) => text.split(source).join(target), value);
 function setLanguage(language) {
   document.documentElement.lang = language;
   textNodes.forEach((node) => {
     const value = englishText.get(node);
-    node.nodeValue = language === 'id' && translations[value] !== undefined ? translations[value] : value;
+    node.nodeValue = language === 'id' ? translateText(value) : value;
   });
   storage.set('profile-language', language);
   document.querySelector('.language-toggle').textContent = language === 'id' ? 'EN' : 'ID';

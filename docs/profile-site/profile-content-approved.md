@@ -19,12 +19,12 @@ Use the following chronology and role descriptions. Do not add seniority labels,
 | --- | --- | --- | --- | --- |
 | May 2012–December 2012 | Network Operations Center | PT Infracom Telesarana | Cikarang | INFRACOM provides telecommunications and information-technology infrastructure solutions, including engineering, systems integration, network deployment, and VSAT services. Monitored internet network services transmitted from earth stations to satellites and supported customer service quality. |
 | February 2013–December 2014 | Technical Support | PT Indosat Tbk. | Surabaya | Performed hardware, connectivity, and service checks; documented, troubleshot, and escalated telecommunications issues. |
-| January 2014–April 2015 | Customer Service Assistant | Beon Intermedia | Malang | Supported website, domain, and hosting customers through issue intake, initial troubleshooting, escalation, and follow-through to resolution. |
+| January 2014–April 2015 | Customer Service Assistant | Jagoanhosting | Malang | Supported website, domain, and hosting customers through issue intake, initial troubleshooting, escalation, and follow-through to resolution. |
 | April 2015–February 2016 | Network Engineer | PT Xerindo Teknologi | Malang | Supported field installation and upgrades migrating mobile network devices from 3G to Huawei 4G, including setup, connectivity checks, reporting, and escalation. |
 | December 2018–September 2023 | Mobile Engineer | Alterra | Jakarta | Developed and maintained mobile banking and enterprise applications; handled defect triage, API/authentication/notification/device issues, release support, thermal-printer integration, and mentoring. |
 | October 2023–July 2026 | Mobile Engineer | Reku | Jakarta | Reku is an Indonesian digital-asset investment platform. Maintained Android/iOS application functionality; investigated defects and production incidents, analyzed logs, coordinated with QA/backend/product/release teams, and supported Codemagic, Fastlane, and Shorebird workflows. |
 
-Company context used on the public experience page: Alterra provides digital infrastructure and distribution services in Indonesia; Xerindo is a telecommunications engineering company supporting mobile-network infrastructure; Indosat is a telecommunications operator; Beon Intermedia provides website, domain, and hosting services; INFRACOM provides telecommunications and information-technology infrastructure solutions, including engineering, systems integration, network deployment, and VSAT services. Indosat and Beon remain separate entries because their supplied periods, roles, locations, and responsibilities differ.
+Company context used on the public experience page: Alterra provides digital infrastructure and distribution services in Indonesia; Xerindo is a telecommunications engineering company supporting mobile-network infrastructure; Indosat is a telecommunications operator; Jagoanhosting provides website, domain, and hosting services; INFRACOM provides telecommunications and information-technology infrastructure solutions, including engineering, systems integration, network deployment, and VSAT services. Indosat and Jagoanhosting remain separate entries because their supplied periods, roles, locations, and responsibilities differ.
 
 ## Selected projects and achievements
 
@@ -59,7 +59,7 @@ List only skills evidenced by the approved experience and project descriptions:
 ## Date and evidence decisions
 
 - **Reku:** Use `October 2023–July 2026`, per the current issue instruction. The role responsibilities remain based on the owner-provided source-of-truth profile.
-- **Indosat and Beon overlap:** Preserve both supplied periods. The overlap from January 2014 through December 2014 is unresolved; do not label either role part-time, contract, or concurrent unless the owner confirms it.
+- **Indosat and Jagoanhosting overlap:** Preserve both supplied periods. The overlap from January 2014 through December 2014 is unresolved; do not label either role part-time, contract, or concurrent unless the owner confirms it.
 - **2012 education/work distinction:** The 2012 work entry is PT Infracom Telesarana, while the CV also lists SMK Telkom Malang education ending in 2012. Do not merge or replace either record.
 - **Source priority:** Owner-provided LinkedIn details and CV are the authoritative sources for this draft; wording is intentionally neutral where the sources differ.
 
@@ -68,13 +68,13 @@ List only skills evidenced by the approved experience and project descriptions:
 | Content | Source | Confidence |
 | --- | --- | --- |
 | PT Infracom role, period, location, and satellite-network scope | Owner-provided LinkedIn experience detail in DIG-9, accessed 2026-07-16 | High |
-| Indosat, Beon, Xerindo, Alterra, Reku roles and CV descriptions | `CV_IT_Support_Rahmad_Bayu_Darmawan.docx.pdf`, attached to DIG-9, accessed 2026-07-16 | High |
+| Indosat, Jagoanhosting, Xerindo, Alterra, Reku roles and CV descriptions | `CV_IT_Support_Rahmad_Bayu_Darmawan.docx.pdf`, attached to DIG-9, accessed 2026-07-16 | High |
 | Reku current status and public LinkedIn URL | Owner-provided LinkedIn URL/details in DIG-9, accessed 2026-07-16 | High |
 | GitHub URL | Supplied CV link, accessed 2026-07-16 | High |
 | Reku company context | https://reku.id/ and https://reku.id/en | Medium |
 | Alterra company context | https://alterra.id/ | Medium |
 | Indosat company context | https://ioh.co.id/portal/en/about-us | High |
-| Beon company context | https://www.beon.co.id/ | Medium |
+| Jagoanhosting company context | https://www.jagoanhosting.com/ | Medium |
 | Xerindo company context | https://xerindo.com/ | Low/medium; public company detail is limited |
 | PT Infracom Telesarana company context | https://www.linkedin.com/company/pt-infracom-telesarana/about/ | Medium; concise paraphrase of the public LinkedIn company profile |
 | CCP Management, Loket Mobile, award, and release-cadence claim | Supplied CV, accessed 2026-07-16 | High for attribution to the CV; not independently audited |

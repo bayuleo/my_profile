@@ -32,6 +32,10 @@ const translations = {
   'Stakeholder coordination': 'Koordinasi stakeholder', 'Network infrastructure': 'Infrastruktur jaringan', 'Software Engineering': 'Rekayasa Perangkat Lunak', 'Electricity usage': 'Penggunaan listrik', 'Internal app': 'Aplikasi internal', 'Management': 'Manajemen'
   ,'/ 01 — About': '/ 01 — Tentang', '/ 02 — Experience': '/ 02 — Pengalaman', '/ 03 — Community leadership': '/ 03 — Kepemimpinan komunitas', '/ 04 — Education': '/ 04 — Pendidikan', '/ 05 — Selected work': '/ 05 — Karya pilihan', '/ 06 — Contact': '/ 06 — Kontak', 'Android · Management': 'Android · Manajemen', 'Android · Xamarin · Internal app': 'Android · Xamarin · Aplikasi internal'
 };
+const pageCopy = {
+  en: { title: 'Rahmad Bayu Darmawan — Mobile Engineer', description: 'Rahmad Bayu Darmawan — Mobile Engineer building Android, iOS, and Flutter applications.' },
+  id: { title: 'Rahmad Bayu Darmawan — Mobile Engineer', description: 'Rahmad Bayu Darmawan — Mobile Engineer yang membangun aplikasi Android, iOS, dan Flutter.' }
+};
 const storage = {
   get(key) { try { return localStorage.getItem(key); } catch { return null; } },
   set(key, value) { try { localStorage.setItem(key, value); } catch {} }
@@ -59,16 +63,30 @@ function setLanguage(language) {
   if (themeLabel) themeLabel.textContent = language === 'id' ? (isDark ? 'TERANG' : 'GELAP') : (isDark ? 'Light' : 'Dark');
   if (themeButton) themeButton.setAttribute('aria-label', language === 'id' ? (isDark ? 'Beralih ke mode terang' : 'Beralih ke mode gelap') : (isDark ? 'Switch to light mode' : 'Switch to dark mode'));
   storage.set('profile-language', language);
+  document.title = pageCopy[language].title;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', pageCopy[language].description);
   document.querySelector('.language-toggle').textContent = language === 'id' ? 'EN' : 'ID';
   document.querySelector('.language-toggle').setAttribute('aria-label', language === 'id' ? 'Switch to English' : 'Beralih ke Bahasa Indonesia');
 }
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#site-nav');
-const closeNav = () => { nav?.classList.remove('is-open'); toggle?.setAttribute('aria-expanded', 'false'); };
-toggle?.addEventListener('click', () => { const isOpen = nav.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', String(isOpen)); });
+const closeNav = ({ restoreFocus = false } = {}) => {
+  nav?.classList.remove('is-open');
+  toggle?.setAttribute('aria-expanded', 'false');
+  toggle?.setAttribute('aria-label', document.documentElement.lang === 'id' ? 'Buka navigasi' : 'Open navigation');
+  if (restoreFocus) toggle?.focus();
+};
+toggle?.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('is-open');
+  toggle.setAttribute('aria-expanded', String(isOpen));
+  toggle.setAttribute('aria-label', isOpen
+    ? (document.documentElement.lang === 'id' ? 'Tutup navigasi' : 'Close navigation')
+    : (document.documentElement.lang === 'id' ? 'Buka navigasi' : 'Open navigation'));
+  if (isOpen) nav.querySelector('a')?.focus();
+});
 nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeNav));
 document.addEventListener('click', (event) => { if (nav?.classList.contains('is-open') && !nav.contains(event.target) && !toggle?.contains(event.target)) closeNav(); });
-document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && nav?.classList.contains('is-open')) { closeNav(); toggle?.focus(); } });
+document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && nav?.classList.contains('is-open')) closeNav({ restoreFocus: true }); });
 const languageToggle = document.querySelector('.language-toggle');
 languageToggle?.addEventListener('click', () => setLanguage(document.documentElement.lang === 'en' ? 'id' : 'en'));
 const themeToggle = document.querySelector('.theme-toggle');
@@ -85,5 +103,17 @@ function setTheme(theme) {
   if (label) label.textContent = document.documentElement.lang === 'id' ? (dark ? 'TERANG' : 'GELAP') : (dark ? 'Light' : 'Dark');
 }
 themeToggle?.addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
+const sectionLinks = [...document.querySelectorAll('.site-nav a[href^="#"]')];
+const sections = sectionLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+if ('IntersectionObserver' in window) {
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      sectionLinks.forEach((link) => link.removeAttribute('aria-current'));
+      document.querySelector(`.site-nav a[href="#${entry.target.id}"]`)?.setAttribute('aria-current', 'page');
+    });
+  }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+  sections.forEach((section) => sectionObserver.observe(section));
+}
 setTheme(document.documentElement.dataset.theme || (window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
 if (storage.get('profile-language') === 'id') setLanguage('id');

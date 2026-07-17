@@ -17,17 +17,16 @@ const textNodes = [...document.body.childNodes].flatMap(function collect(node) {
   if (node.nodeType === Node.TEXT_NODE) return [node];
   return [...node.childNodes].flatMap(collect);
 });
+const englishText = new Map(textNodes.map((node) => [node, node.nodeValue]));
 function setLanguage(language) {
   document.documentElement.lang = language;
   textNodes.forEach((node) => {
-    const value = node.nodeValue;
-    if (language === 'id' && translations[value] !== undefined) node.nodeValue = translations[value];
-    if (language === 'en' && node.dataset?.english) node.nodeValue = node.dataset.english;
+    const value = englishText.get(node);
+    node.nodeValue = language === 'id' && translations[value] !== undefined ? translations[value] : value;
   });
   localStorage.setItem('profile-language', language);
   document.querySelector('.language-toggle').textContent = language === 'id' ? 'EN' : 'ID';
   document.querySelector('.language-toggle').setAttribute('aria-label', language === 'id' ? 'Switch to English' : 'Beralih ke Bahasa Indonesia');
-  if (language === 'en') location.reload();
 }
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#site-nav');

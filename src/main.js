@@ -24,10 +24,10 @@ function setLanguage(language) {
     if (language === 'id' && translations[value] !== undefined) node.nodeValue = translations[value];
     if (language === 'en' && node.dataset?.english) node.nodeValue = node.dataset.english;
   });
-  if (language === 'en') location.reload();
   localStorage.setItem('profile-language', language);
   document.querySelector('.language-toggle').textContent = language === 'id' ? 'EN' : 'ID';
   document.querySelector('.language-toggle').setAttribute('aria-label', language === 'id' ? 'Switch to English' : 'Beralih ke Bahasa Indonesia');
+  if (language === 'en') location.reload();
 }
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#site-nav');

@@ -17,14 +17,14 @@ Use the following chronology and role descriptions. Do not add seniority labels,
 
 | Period | Role | Organization | Location | Public description |
 | --- | --- | --- | --- | --- |
-| May 2012–December 2012 | Network Operations Center | PT Infracom Telesarana | Cikarang | Monitored internet network services transmitted from earth stations to satellites and supported customer service quality. |
-| February 2013–December 2014 | Technical Support | PT Indosat Tbk. | Surabaya and surrounding areas | Performed hardware, connectivity, and service checks; documented, troubleshot, and escalated telecommunications issues. |
+| May 2012–December 2012 | Network Operations Center | PT Infracom Telesarana | Cikarang | INFRACOM provides telecommunications and information-technology infrastructure solutions, including engineering, systems integration, network deployment, and VSAT services. Monitored internet network services transmitted from earth stations to satellites and supported customer service quality. |
+| February 2013–December 2014 | Technical Support | PT Indosat Tbk. | Surabaya | Performed hardware, connectivity, and service checks; documented, troubleshot, and escalated telecommunications issues. |
 | January 2014–April 2015 | Customer Service Assistant | Beon Intermedia | Malang | Supported website, domain, and hosting customers through issue intake, initial troubleshooting, escalation, and follow-through to resolution. |
 | April 2015–February 2016 | Network Engineer | PT Xerindo Teknologi | Malang | Supported field installation and upgrades migrating mobile network devices from 3G to Huawei 4G, including setup, connectivity checks, reporting, and escalation. |
 | December 2018–September 2023 | Mobile Engineer | Alterra | Jakarta | Developed and maintained mobile banking and enterprise applications; handled defect triage, API/authentication/notification/device issues, release support, thermal-printer integration, and mentoring. |
 | October 2023–July 2026 | Mobile Engineer | Reku | Jakarta | Reku is an Indonesian digital-asset investment platform. Maintained Android/iOS application functionality; investigated defects and production incidents, analyzed logs, coordinated with QA/backend/product/release teams, and supported Codemagic, Fastlane, and Shorebird workflows. |
 
-Company context used on the public experience page: Alterra provides digital infrastructure and distribution services in Indonesia; Xerindo is a telecommunications engineering company supporting mobile-network infrastructure; Indosat is a telecommunications operator; Beon Intermedia provides website, domain, and hosting services. No concise current description is published for PT Infracom Telesarana because the available public information was not clear enough to verify. Indosat and Beon remain separate entries because their supplied periods, roles, locations, and responsibilities differ.
+Company context used on the public experience page: Alterra provides digital infrastructure and distribution services in Indonesia; Xerindo is a telecommunications engineering company supporting mobile-network infrastructure; Indosat is a telecommunications operator; Beon Intermedia provides website, domain, and hosting services; INFRACOM provides telecommunications and information-technology infrastructure solutions, including engineering, systems integration, network deployment, and VSAT services. Indosat and Beon remain separate entries because their supplied periods, roles, locations, and responsibilities differ.
 
 ## Selected projects and achievements
 
@@ -76,5 +76,5 @@ List only skills evidenced by the approved experience and project descriptions:
 | Indosat company context | https://ioh.co.id/portal/en/about-us | High |
 | Beon company context | https://www.beon.co.id/ | Medium |
 | Xerindo company context | https://xerindo.com/ | Low/medium; public company detail is limited |
-| PT Infracom Telesarana company context | Public search and company pages reviewed 2026-07-17 | Not publishable; description not clearly verifiable |
+| PT Infracom Telesarana company context | https://www.linkedin.com/company/pt-infracom-telesarana/about/ | Medium; concise paraphrase of the public LinkedIn company profile |
 | CCP Management, Loket Mobile, award, and release-cadence claim | Supplied CV, accessed 2026-07-16 | High for attribution to the CV; not independently audited |

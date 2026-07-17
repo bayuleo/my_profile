@@ -81,7 +81,7 @@ function setTheme(theme) {
   const icon = themeToggle.querySelector('span');
   const label = themeToggle.querySelector('.theme-label');
   if (icon) icon.textContent = dark ? '☀' : '☾';
-  if (label) label.textContent = dark ? 'Light' : 'Dark';
+  if (label) label.textContent = document.documentElement.lang === 'id' ? (dark ? 'TERANG' : 'GELAP') : (dark ? 'Light' : 'Dark');
 }
 themeToggle?.addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
 setTheme(document.documentElement.dataset.theme || (window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));

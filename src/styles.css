@@ -13,3 +13,4 @@
 .signal-art-label{position:absolute;right:25px;bottom:32px;color:var(--ink);font:10px 'DM Mono';letter-spacing:.08em;text-transform:uppercase;transform:rotate(-90deg);transform-origin:right bottom}
 @media(max-width:760px){.hero-aside{max-width:100%}.hero-portrait{width:min(100%,360px);margin-bottom:30px}.hero-portrait img{box-shadow:10px 10px 0 var(--lime)}.signal-art{width:min(100%,360px);margin-left:-18px}}
 .timeline-highlight{margin:18px 0 0;padding:12px 14px;border-left:3px solid var(--orange);background:#fff4ee;color:var(--ink);font-size:12px;line-height:1.6}.timeline-highlight strong{font-weight:800}
+.community{background:#edf2e8}.community .timeline-item{border-bottom:0;margin-bottom:0;padding-bottom:0}.community .section-heading{align-self:start}

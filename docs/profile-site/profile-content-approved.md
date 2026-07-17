@@ -28,6 +28,11 @@ Company context used on the public experience page: Alterra Indonesia provides d
 
 ## Selected projects and achievements
 
+## Community leadership
+
+- **Community Treasurer & Technical Lead (Present):** A separate community-leadership section is the most accurate placement because this is not formal employment or a professional title. Manage operational responsibilities as a community administrator and treasurer, coordinate residents around shared initiatives, build a dues-management website for payments and balance information, and independently plan and install the neighborhood CCTV network from setup through implementation.
+- Use `Present` without a start date until the owner confirms when the responsibility began. Avoid claims about resident count, budget, savings, or measurable impact that have not been supplied.
+
 - **CCP Management (2023–2026, part-time, freelance):** Built and implemented a mobile operational system for CCP, a local internet-provider brand in Magetan, East Java, covering attendance, payroll, and customer-data management.
 - **Loket Mobile (2020–2021):** PDAM record-keeping application and one of Alterra Indonesia’s products; built for operational workflows with Android and Xamarin.
 - **Alphapay and Solfin:** Maintained Alphapay, a POS app focused at the time on digital products for mobile-phone counters, and Solfin, a banking app from Alterra Indonesia’s collaboration with Bank Mayapada.

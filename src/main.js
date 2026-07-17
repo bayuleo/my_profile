@@ -6,7 +6,7 @@ const translations = {
   'About': 'Tentang', 'Engineering with': 'Engineering dengan', 'the whole picture': 'gambaran utuh', ' in mind.': ' sebagai pertimbangan.',
   'My background spans telecommunications operations, technical support, customer service, network infrastructure, and mobile engineering. That range shapes how I work: investigate carefully, communicate clearly, and keep the user experience at the center.': 'Latar belakang saya mencakup operasi telekomunikasi, dukungan teknis, layanan pelanggan, infrastruktur jaringan, dan mobile engineering. Pengalaman ini membentuk cara kerja saya: menyelidiki dengan teliti, berkomunikasi dengan jelas, dan menempatkan pengalaman pengguna sebagai pusat.',
   'Experience': 'Pengalaman', 'A career built': 'Karier yang dibangun', 'close to the signal.': 'dekat dengan sinyal.',
-  'Community leadership': 'Kepemimpinan komunitas', 'Leadership through': 'Kepemimpinan melalui', 'practical ownership.': 'tanggung jawab nyata.', Present: 'Saat ini', Community: 'Komunitas',
+  'Product & entrepreneurship': 'Produk & kewirausahaan', 'Products built': 'Produk yang dibangun', 'from the ground up.': 'dari nol.', 'Founder and Product Builder': 'Founder dan Product Builder', 'Standing Mirror Product': 'Produk Standing Mirror', 'Product venture': 'Usaha produk', 'Product validation': 'Validasi produk', 'Production': 'Produksi', 'Fulfillment': 'Pemenuhan pesanan', 'Service venture': 'Usaha jasa', 'Founder and Operations Lead': 'Founder dan Operations Lead', 'Wedding Photobooth Service': 'Layanan Photobooth Pernikahan', 'Service design': 'Desain layanan', 'Team building': 'Membangun tim', 'End-to-end delivery': 'Eksekusi end-to-end', 'thousands of units': 'ribuan unit', 'hundreds of clients in one year': 'ratusan klien dalam satu tahun', 'Community leadership': 'Kepemimpinan komunitas', 'Leadership through': 'Kepemimpinan melalui', 'practical ownership.': 'tanggung jawab nyata.', Present: 'Saat ini', Community: 'Komunitas',
   'Education': 'Pendidikan', 'Learning the': 'Mempelajari', 'layers beneath.': 'lapisan di baliknya.', 'Non-formal': 'Non-formal',
   'Selected work': 'Karya pilihan', 'Projects with': 'Proyek dengan', 'practical impact.': 'dampak nyata.',
   'Let’s make something': 'Mari membuat sesuatu', 'work beautifully.': 'bekerja dengan indah.', 'Back to top ': 'Kembali ke atas ',
@@ -30,7 +30,7 @@ const translations = {
   'Freelance Flutter application for the operational system of Arrohmah school, managing santri check-in and check-out across iOS and Android.': 'Aplikasi Flutter freelance untuk sistem operasional sekolah Arrohmah, mengelola check-in dan check-out santri di iOS dan Android.',
   'If you’re hiring for a mobile engineering role, building a mobile product, or untangling a tricky production issue, I’d be glad to connect.': 'Jika Anda sedang merekrut untuk peran mobile engineering, membangun produk mobile, atau menangani masalah produksi yang rumit, saya dengan senang hati akan terhubung.',
   'Stakeholder coordination': 'Koordinasi stakeholder', 'Network infrastructure': 'Infrastruktur jaringan', 'Software Engineering': 'Rekayasa Perangkat Lunak', 'Electricity usage': 'Penggunaan listrik', 'Internal app': 'Aplikasi internal', 'Management': 'Manajemen'
-  ,'/ 01 — About': '/ 01 — Tentang', '/ 02 — Experience': '/ 02 — Pengalaman', '/ 03 — Community leadership': '/ 03 — Kepemimpinan komunitas', '/ 04 — Education': '/ 04 — Pendidikan', '/ 05 — Selected work': '/ 05 — Karya pilihan', '/ 06 — Contact': '/ 06 — Kontak', 'Android · Management': 'Android · Manajemen', 'Android · Xamarin · Internal app': 'Android · Xamarin · Aplikasi internal'
+  ,'/ 01 — About': '/ 01 — Tentang', '/ 02 — Experience': '/ 02 — Pengalaman', '/ 03 — Product & entrepreneurship': '/ 03 — Produk & kewirausahaan', '/ 04 — Community leadership': '/ 04 — Kepemimpinan komunitas', '/ 05 — Education': '/ 05 — Pendidikan', '/ 06 — Selected work': '/ 06 — Karya pilihan', '/ 07 — Contact': '/ 07 — Kontak', 'Android · Management': 'Android · Manajemen', 'Android · Xamarin · Internal app': 'Android · Xamarin · Aplikasi internal'
 };
 const storage = {
   get(key) { try { return localStorage.getItem(key); } catch { return null; } },
@@ -45,7 +45,7 @@ const translationEntries = Object.entries(translations).sort(([left], [right]) =
 const translateText = (value) => translationEntries.reduce((text, [source, target]) => text.split(source).join(target), value);
 const sectionLabels = [...document.querySelectorAll('.section-label')];
 const sectionLabelEnglish = sectionLabels.map((node) => node.textContent);
-const sectionLabelIndonesian = ['/ 01 — Tentang', '/ 02 — Pengalaman', '/ 03 — Kepemimpinan komunitas', '/ 04 — Pendidikan', '/ 05 — Karya pilihan', '/ 06 — Kontak'];
+const sectionLabelIndonesian = ['/ 01 — Tentang', '/ 02 — Pengalaman', '/ 03 — Produk & kewirausahaan', '/ 04 — Kepemimpinan komunitas', '/ 05 — Pendidikan', '/ 06 — Karya pilihan', '/ 07 — Kontak'];
 function setLanguage(language) {
   document.documentElement.lang = language;
   textNodes.forEach((node) => {

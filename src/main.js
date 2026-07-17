@@ -29,6 +29,7 @@ const translations = {
   'Freelance Flutter application for the operational system of Arrohmah school, managing santri check-in and check-out across iOS and Android.': 'Aplikasi Flutter freelance untuk sistem operasional sekolah Arrohmah, mengelola check-in dan check-out santri di iOS dan Android.',
   'If you’re hiring for a mobile engineering role, building a mobile product, or untangling a tricky production issue, I’d be glad to connect.': 'Jika Anda sedang merekrut untuk peran mobile engineering, membangun produk mobile, atau menangani masalah produksi yang rumit, saya dengan senang hati akan terhubung.',
   'Stakeholder coordination': 'Koordinasi stakeholder', 'Network infrastructure': 'Infrastruktur jaringan', 'Software Engineering': 'Rekayasa Perangkat Lunak', 'Electricity usage': 'Penggunaan listrik', 'Internal app': 'Aplikasi internal', 'Management': 'Manajemen'
+  ,'/ 01 — About': '/ 01 — Tentang', '/ 02 — Experience': '/ 02 — Pengalaman', '/ 03 — Community leadership': '/ 03 — Kepemimpinan komunitas', '/ 04 — Education': '/ 04 — Pendidikan', '/ 05 — Selected work': '/ 05 — Karya pilihan', '/ 06 — Contact': '/ 06 — Kontak', 'Android · Management': 'Android · Manajemen', 'Android · Xamarin · Internal app': 'Android · Xamarin · Aplikasi internal'
 };
 const storage = {
   get(key) { try { return localStorage.getItem(key); } catch { return null; } },
@@ -41,12 +42,16 @@ const textNodes = [...document.body.childNodes].flatMap(function collect(node) {
 const englishText = new Map(textNodes.map((node) => [node, node.nodeValue]));
 const translationEntries = Object.entries(translations).sort(([left], [right]) => right.length - left.length);
 const translateText = (value) => translationEntries.reduce((text, [source, target]) => text.split(source).join(target), value);
+const sectionLabels = [...document.querySelectorAll('.section-label')];
+const sectionLabelEnglish = sectionLabels.map((node) => node.textContent);
+const sectionLabelIndonesian = ['/ 01 — Tentang', '/ 02 — Pengalaman', '/ 03 — Kepemimpinan komunitas', '/ 04 — Pendidikan', '/ 05 — Karya pilihan', '/ 06 — Kontak'];
 function setLanguage(language) {
   document.documentElement.lang = language;
   textNodes.forEach((node) => {
     const value = englishText.get(node);
     node.nodeValue = language === 'id' ? translateText(value) : value;
   });
+  sectionLabels.forEach((node, index) => { node.textContent = language === 'id' ? sectionLabelIndonesian[index] : sectionLabelEnglish[index]; });
   storage.set('profile-language', language);
   document.querySelector('.language-toggle').textContent = language === 'id' ? 'EN' : 'ID';
   document.querySelector('.language-toggle').setAttribute('aria-label', language === 'id' ? 'Switch to English' : 'Beralih ke Bahasa Indonesia');

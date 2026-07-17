@@ -34,7 +34,7 @@ Mobile and IT Support professional with experience spanning telecommunications n
 - Indosat: https://ioh.co.id/portal/en/about-us — official company page reviewed 2026-07-17.
 - Beon Intermedia: https://www.beon.co.id/ — official service/company page reviewed 2026-07-17.
 - Xerindo Teknologi: https://xerindo.com/ — official site reviewed 2026-07-17; public detail is limited, so wording remains conservative.
-- PT Infracom Telesarana: public search and company pages reviewed 2026-07-17; no sufficiently clear source found for a concise current company description, so the page documents the uncertainty instead of speculating.
+- PT Infracom Telesarana: https://www.linkedin.com/company/pt-infracom-telesarana/about/ — official public LinkedIn company profile reviewed 2026-07-17. The page uses only a concise paraphrase of its infrastructure, engineering, systems integration, network deployment, and VSAT context.
 
 ## Evidence
 

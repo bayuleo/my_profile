@@ -13,6 +13,10 @@ const translations = {
   'Built with care / Indonesia': 'Dibuat dengan sepenuh perhatian / Indonesia',
   'View on Google Play ': 'Lihat di Google Play ', 'App Store ': 'App Store ', 'Google Play ': 'Google Play '
 };
+const storage = {
+  get(key) { try { return localStorage.getItem(key); } catch { return null; } },
+  set(key, value) { try { localStorage.setItem(key, value); } catch {} }
+};
 const textNodes = [...document.body.childNodes].flatMap(function collect(node) {
   if (node.nodeType === Node.TEXT_NODE) return [node];
   return [...node.childNodes].flatMap(collect);
@@ -24,7 +28,7 @@ function setLanguage(language) {
     const value = englishText.get(node);
     node.nodeValue = language === 'id' && translations[value] !== undefined ? translations[value] : value;
   });
-  localStorage.setItem('profile-language', language);
+  storage.set('profile-language', language);
   document.querySelector('.language-toggle').textContent = language === 'id' ? 'EN' : 'ID';
   document.querySelector('.language-toggle').setAttribute('aria-label', language === 'id' ? 'Switch to English' : 'Beralih ke Bahasa Indonesia');
 }
@@ -40,12 +44,12 @@ languageToggle?.addEventListener('click', () => setLanguage(document.documentEle
 const themeToggle = document.querySelector('.theme-toggle');
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
-  localStorage.setItem('profile-theme', theme);
+  storage.set('profile-theme', theme);
   const dark = theme === 'dark';
   themeToggle?.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
   themeToggle?.querySelector('span').textContent = dark ? '☀' : '☾';
   themeToggle?.querySelector('.theme-label').textContent = dark ? 'Light' : 'Dark';
 }
 themeToggle?.addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
-setTheme(document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-if (localStorage.getItem('profile-language') === 'id') setLanguage('id');
+setTheme(document.documentElement.dataset.theme || (window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+if (storage.get('profile-language') === 'id') setLanguage('id');

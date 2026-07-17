@@ -131,6 +131,17 @@ html[data-theme="dark"] .tags span:hover { background: var(--dark-ink); border-c
 }
 
 .site-nav a[aria-current="page"] { color: var(--ink); }
+.site-nav a:focus-visible,
+.site-preferences button:focus-visible,
+.menu-toggle:focus-visible,
+.button:focus-visible,
+.text-link:focus-visible,
+.project-link:focus-visible,
+.contact-links a:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
 .site-nav a[aria-current="page"]:not(.nav-contact) { position: relative; }
 .site-nav a[aria-current="page"]:not(.nav-contact)::after {
   content: '';

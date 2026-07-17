@@ -71,7 +71,8 @@ function setTheme(theme) {
   storage.set('profile-theme', theme);
   const dark = theme === 'dark';
   if (!themeToggle) return;
-  themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+  const isIndonesian = document.documentElement.lang === 'id';
+  themeToggle.setAttribute('aria-label', isIndonesian ? (dark ? 'Beralih ke mode terang' : 'Beralih ke mode gelap') : (dark ? 'Switch to light mode' : 'Switch to dark mode'));
   const icon = themeToggle.querySelector('span');
   const label = themeToggle.querySelector('.theme-label');
   if (icon) icon.textContent = dark ? '☀' : '☾';

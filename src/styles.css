@@ -214,3 +214,53 @@ body { letter-spacing: -.01em; }
 @media (prefers-reduced-motion: reduce) {
   .site-nav a:not(.nav-contact)::before { transition: none; }
 }
+
+/* Accessibility polish: keep shared tokens readable across themes and sizes. */
+html[data-theme="dark"] {
+  --ink: var(--dark-ink);
+  --muted: var(--dark-muted);
+  --cream: var(--dark-cream);
+  --paper: var(--dark-paper);
+  --line: var(--dark-line);
+  --hairline: color-mix(in srgb, var(--dark-line) 86%, transparent);
+}
+
+html[data-theme="dark"] .nav-contact,
+html[data-theme="dark"] .button-primary {
+  color: #17211d;
+}
+
+html[data-theme="dark"] .nav-contact:hover,
+html[data-theme="dark"] .button-primary:hover {
+  color: var(--paper);
+}
+
+html[data-theme="dark"] .text-link,
+html[data-theme="dark"] .project-link,
+html[data-theme="dark"] .contact-links a {
+  border-color: var(--dark-line);
+}
+
+html[data-theme="dark"] .timeline-highlight {
+  color: var(--dark-ink);
+  border-left-color: var(--orange);
+}
+
+.site-preferences button,
+.menu-toggle {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+@media (max-width: 760px) {
+  .page-shell { padding-inline: 6vw; }
+  .site-header { min-height: 76px; height: auto; padding-block: 14px; }
+  .hero-actions { align-items: stretch; flex-direction: column; gap: 18px; }
+  .button { justify-content: center; min-height: 48px; padding-inline: 22px; }
+  .text-link { align-self: flex-start; padding-block: 8px; }
+  .project-card { min-height: 0; padding: 24px 22px; }
+  .project-icon { margin: 42px 0 20px; }
+  .timeline-item { grid-template-columns: 1fr; gap: 14px; padding-bottom: 30px; margin-bottom: 30px; }
+  .contact-links { flex-direction: column; gap: 12px; }
+  .contact-links a { min-width: 0; padding-block: 14px; }
+}

@@ -5,7 +5,10 @@
 
 /* Original signal-map artwork: decorative, responsive, and motion-free. */
 .hero-aside{max-width:315px}
+.hero-portrait{position:relative;width:min(100%,315px);margin:0 0 28px;transform:rotate(2deg)}
+.hero-portrait img{display:block;width:100%;aspect-ratio:1;object-fit:cover;object-position:center;border-radius:2px;filter:saturate(.86);box-shadow:14px 14px 0 var(--lime)}
+.hero-portrait figcaption{margin-top:13px;color:var(--muted);font:10px 'DM Mono';letter-spacing:.08em;text-transform:uppercase}
 .signal-art{position:relative;width:min(100%,315px);margin:0 0 18px -20px}
 .signal-art img{display:block;width:100%;height:auto;opacity:.86}
 .signal-art-label{position:absolute;right:25px;bottom:32px;color:var(--ink);font:10px 'DM Mono';letter-spacing:.08em;text-transform:uppercase;transform:rotate(-90deg);transform-origin:right bottom}
-@media(max-width:760px){.hero-aside{max-width:100%}.signal-art{width:min(100%,360px);margin-left:-18px}}
+@media(max-width:760px){.hero-aside{max-width:100%}.hero-portrait{width:min(100%,360px);margin-bottom:30px}.hero-portrait img{box-shadow:10px 10px 0 var(--lime)}.signal-art{width:min(100%,360px);margin-left:-18px}}

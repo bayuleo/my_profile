@@ -129,3 +129,18 @@ html[data-theme="dark"] .tags span:hover { background: var(--dark-ink); border-c
   .project-link,
   .contact-links a { transition: none; }
 }
+
+.site-nav a[aria-current="page"] { color: var(--ink); }
+.site-nav a[aria-current="page"]:not(.nav-contact) { position: relative; }
+.site-nav a[aria-current="page"]:not(.nav-contact)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -9px;
+  height: 2px;
+  background: var(--orange);
+}
+@media (max-width: 760px) {
+  .site-nav a[aria-current="page"]:not(.nav-contact)::after { bottom: -5px; right: auto; width: 24px; }
+}

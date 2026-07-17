@@ -27,6 +27,15 @@ Mobile and IT Support professional with experience spanning telecommunications n
 - CCP Management (2023–2026, part-time): Android employee and device management application with inventory records, location logs, API integration, PDF reporting, and Firebase App Distribution.
 - Loket Mobile (2020–2021): Android field billing application integrated with a thermal printer for billing and payment collection workflows.
 
+## Public company-context sources
+
+- Reku: https://reku.id/ and https://reku.id/en — official product/company pages reviewed 2026-07-17.
+- Alterra: https://alterra.id/ — official company page reviewed 2026-07-17.
+- Indosat: https://ioh.co.id/portal/en/about-us — official company page reviewed 2026-07-17.
+- Beon Intermedia: https://www.beon.co.id/ — official service/company page reviewed 2026-07-17.
+- Xerindo Teknologi: https://xerindo.com/ — official site reviewed 2026-07-17; public detail is limited, so wording remains conservative.
+- PT Infracom Telesarana: public search and company pages reviewed 2026-07-17; no sufficiently clear source found for a concise current company description, so the page documents the uncertainty instead of speculating.
+
 ## Evidence
 
 | Claim | Source | Confidence | Follow-up |

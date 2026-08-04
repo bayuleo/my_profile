@@ -11,7 +11,7 @@ const translations = {
   'Selected work': 'Karya pilihan', 'Projects with': 'Proyek dengan', 'practical impact.': 'dampak nyata.',
   'Let’s make something': 'Mari membuat sesuatu', 'work beautifully.': 'bekerja dengan indah.', 'Back to top ': 'Kembali ke atas ',
   'Built with care / Indonesia': 'Dibuat dengan sepenuh perhatian / Indonesia',
-  'I’m Rahmad Bayu Darmawan, a Mobile Engineer focused on Android, iOS, and Flutter applications, production troubleshooting, and reliable release workflows.': 'Saya Rahmad Bayu Darmawan, Mobile Engineer yang berfokus pada aplikasi Android, iOS, dan Flutter, penanganan masalah produksi, serta alur rilis yang andal.',
+  'I’m Rahmad Bayu Darmawan, a Software Engineer focused on mobile, fullstack applications, operational systems, and reliable delivery workflows.': 'Saya Rahmad Bayu Darmawan, Software Engineer yang berfokus pada mobile, fullstack applications, operational systems, serta alur delivery yang andal.',
   'View on Google Play ': 'Lihat di Google Play ', 'App Store ': 'App Store ', 'Google Play ': 'Google Play ',
   'API & auth': 'API & autentikasi', 'Incident response': 'Respons insiden', 'Release workflows': 'Alur rilis', 'Core skills': 'Keahlian utama',
   'AI-enabled delivery:': 'Pengiriman berbantuan AI:',
@@ -33,8 +33,8 @@ const translations = {
   ,'/ 01 — About': '/ 01 — Tentang', '/ 02 — Experience': '/ 02 — Pengalaman', '/ 03 — Community leadership': '/ 03 — Kepemimpinan komunitas', '/ 04 — Education': '/ 04 — Pendidikan', '/ 05 — Selected work': '/ 05 — Karya pilihan', '/ 06 — Contact': '/ 06 — Kontak', 'Android · Management': 'Android · Manajemen', 'Android · Xamarin · Internal app': 'Android · Xamarin · Aplikasi internal'
 };
 const pageCopy = {
-  en: { title: 'Rahmad Bayu Darmawan — Mobile Engineer', description: 'Rahmad Bayu Darmawan — Mobile Engineer building Android, iOS, and Flutter applications.' },
-  id: { title: 'Rahmad Bayu Darmawan — Mobile Engineer', description: 'Rahmad Bayu Darmawan — Mobile Engineer yang membangun aplikasi Android, iOS, dan Flutter.' }
+  en: { title: 'Rahmad Bayu Darmawan — Software Engineer | Mobile & Fullstack', description: 'Rahmad Bayu Darmawan — Software Engineer building mobile products, fullstack applications, and operational systems.' },
+  id: { title: 'Rahmad Bayu Darmawan — Software Engineer | Mobile & Fullstack', description: 'Rahmad Bayu Darmawan — Software Engineer yang membangun mobile products, fullstack applications, dan operational systems.' }
 };
 const storage = {
   get(key) { try { return localStorage.getItem(key); } catch { return null; } },
